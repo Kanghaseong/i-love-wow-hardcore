@@ -1,1 +1,15 @@
+.dash {
+  text-align: center;
+  margin-top: 2rem;
 
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.title {
+  font-weight: 2000;
+}
