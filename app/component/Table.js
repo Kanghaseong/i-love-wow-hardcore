@@ -9,7 +9,7 @@ export default function TableComponent() {
   useEffect(() => {
     // API 호출을 통해 데이터 가져오기
     axios
-      .get("http://localhost:4000/characterInfos")
+      .get("https://54.180.145.80/characterInfos")
       .then((response) => {
         const sortedData = response.data.characterInfos.sort((a, b) => b.level - a.level);
         // 가져온 데이터로 상태 업데이트 전에 정렬
