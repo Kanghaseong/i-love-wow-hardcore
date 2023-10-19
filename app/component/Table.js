@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./table.module.css";
+import env_config from "@/env_config";
 
 export default function TableComponent() {
   const [data, setData] = useState([]); // 초기 상태는 빈 객체
@@ -9,9 +10,9 @@ export default function TableComponent() {
   useEffect(() => {
     // API 호출을 통해 데이터 가져오기
     axios
-      .get("http://wakgpt.xyz:4000/characterInfos")
+      .get(`${env_config()}/users`)
       .then((response) => {
-        const sortedData = response.data.characterInfos.sort((a, b) => b.level - a.level);
+        const sortedData = response.data.users.sort((a, b) => b.level - a.level);
         // 가져온 데이터로 상태 업데이트 전에 정렬
         console.log(sortedData);
         setData(sortedData);
