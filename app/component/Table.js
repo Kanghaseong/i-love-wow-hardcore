@@ -9,7 +9,7 @@ export default function TableComponent() {
   useEffect(() => {
     // API 호출을 통해 데이터 가져오기
     axios
-      .get("https://54.180.145.80/characterInfos")
+      .get("http://wakgpt.xyz:4000/characterInfos")
       .then((response) => {
         const sortedData = response.data.characterInfos.sort((a, b) => b.level - a.level);
         // 가져온 데이터로 상태 업데이트 전에 정렬
@@ -35,7 +35,7 @@ export default function TableComponent() {
             <th>진영</th>
             <th>렐름</th>
             <th>길드</th>
-            <th>마지막 로그인</th>
+            <th>마지막 접속</th>
           </tr>
         </thead>
         <tbody>
