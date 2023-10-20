@@ -6,7 +6,8 @@
   /* 수직 중앙 정렬 */
   height: 70vh;
   /* 브라우저 높이를 100%로 설정 */
-  font-weight: 700;
+  font-weight: 800;
+  font-size: larger;
 }
 
 .tableBox table tr:nth-child(even) {
@@ -20,7 +21,6 @@
 
 .tableBox table td,
 .tableBox table th {
-  padding: 0.2rem;
   /* 원하는 간격으로 조정 */
   border: 1px solid #555555;
   /* 테이블 셀 간의 구분선을 추가 (옵션) */
