@@ -6,7 +6,7 @@ import Table from "../component/Table";
 export default function Page() {
   return (
     <div className={styles.dash}>
-      <h1 className={styles.title}>와우 왁타버스 현황</h1>
+      <img src="/logo.png" alt="logo" />
       <Table></Table>
 
       <div className={styles.foot}>
