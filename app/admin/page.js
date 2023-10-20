@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react"; // useEffect 추가
 import axios from "axios";
 import styles from "./page.module.css";
 import env_config from "@/env_config";
@@ -8,6 +8,7 @@ import env_config from "@/env_config";
 export default function Page() {
   const [text, setText] = useState("");
   const [secretCode, setSecretCode] = useState("");
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false); // 버튼 비활성화 상태 저장
 
   const handleChange = (e) => {
     setText(e.target.value);
@@ -18,6 +19,7 @@ export default function Page() {
   };
 
   const handleClick = async () => {
+    setIsButtonDisabled(true); // 버튼 비활성화
     // ", "를 기준으로 문자열을 나누어 배열에 담음
     const textArray = text.split(", ");
 
@@ -33,6 +35,11 @@ export default function Page() {
     } catch (error) {
       console.error("Error:", error);
     }
+
+    // 3초 후 버튼을 다시 활성화
+    setTimeout(() => {
+      setIsButtonDisabled(false);
+    }, 3000);
   };
 
   return (
@@ -46,7 +53,9 @@ export default function Page() {
         placeholder="여기에 문자열을 입력하세요."
       />
       <input type="text" value={secretCode} onChange={handleSecretCodeChange} />
-      <button onClick={handleClick}>POST 요청 보내기</button>
+      <button onClick={handleClick} disabled={isButtonDisabled}>
+        POST 요청 보내기
+      </button>
     </div>
   );
 }

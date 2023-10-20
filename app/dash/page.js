@@ -7,6 +7,7 @@ export default function Page() {
   return (
     <div className={styles.dash}>
       <img src="/logo.png" alt="logo" />
+      <h3>*사망한 유저는 빨간색으로 표시됩니다.</h3>
       <Table></Table>
 
       <div className={styles.foot}>

@@ -4,7 +4,7 @@
   /* 수평 중앙 정렬 */
   align-items: center;
   /* 수직 중앙 정렬 */
-  height: 70vh;
+  height: 50vh;
   /* 브라우저 높이를 100%로 설정 */
   font-weight: 800;
   font-size: larger;
@@ -21,6 +21,7 @@
 
 .tableBox table td,
 .tableBox table th {
+  padding: 0rem;
   /* 원하는 간격으로 조정 */
   border: 1px solid #555555;
   /* 테이블 셀 간의 구분선을 추가 (옵션) */
@@ -34,7 +35,7 @@
 }
 
 .tableBox table th {
-  background-color: rgb(255, 238, 244)
+  background-color: #E5D283
     /* 테이블 헤더 배경색 */
 }
 
