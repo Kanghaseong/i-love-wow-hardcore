@@ -1,44 +1,90 @@
+/* table.module.css */
 .tableBox {
   display: flex;
   justify-content: center;
-  /* 수평 중앙 정렬 */
   align-items: center;
-  /* 수직 중앙 정렬 */
-  height: 50vh;
-  /* 브라우저 높이를 100%로 설정 */
   font-weight: 800;
-  font-size: larger;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  border-collapse: collapse;
+  min-width: 600px;
+  /* 원하는 테이블 최소 너비 */
+}
+
+.tableBox table th,
+.tableBox table td {
+  padding: 0.5rem;
+  border: 1px solid #555555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tableBox table th {
+  background-color: #E5D283;
 }
 
 .tableBox table tr:nth-child(even) {
-  background-color: rgb(174, 195, 174)
+  background-color: rgb(174, 195, 174);
 }
 
 .tableBox table tr:nth-child(odd) {
-  background-color: rgb(228, 228, 208)
-    /* 원하는 색상으로 설정 */
-}
-
-.tableBox table td,
-.tableBox table th {
-  padding: 0rem;
-  /* 원하는 간격으로 조정 */
-  border: 1px solid #555555;
-  /* 테이블 셀 간의 구분선을 추가 (옵션) */
-}
-
-.tableBox table {
-  border-collapse: collapse;
-  /* 테이블 간격 제거 */
-  width: 60%;
-  /* 테이블 너비 설정 */
-}
-
-.tableBox table th {
-  background-color: #E5D283
-    /* 테이블 헤더 배경색 */
+  background-color: rgb(228, 228, 208);
 }
 
 .dead {
   color: red;
+}
+
+@media (max-width: 768px) {
+  .tableBox {
+    font-size: x-small;
+  }
+
+  .tableContainer {
+    justify-content: center;
+  }
+
+  .tableBox table {
+    width: auto;
+  }
+
+  .tableBox table th,
+  .tableBox table td {
+    padding: 0.2rem;
+  }
+
+  .tableBox table thead {
+    display: none;
+  }
+
+  .tableBox table tr {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .tableBox table td {
+    display: block;
+    position: relative;
+  }
+
+  .tableBox table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.2rem;
+    background-color: #E5D283;
+    width: max-content;
+  }
 }
