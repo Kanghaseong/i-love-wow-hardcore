@@ -1,7 +1,8 @@
 .dash {
   text-align: center;
   margin-top: 2rem;
-
+  font-weight: 800;
+  background-color: #4F709C;
 }
 
 .foot {
@@ -10,6 +11,25 @@
 
 }
 
-/* .title {
-  font-weight: 2000;
-} */
+.view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.view_node3,
+.view_node1 {
+  /* background-color: #4F709C; */
+  background-color: seagreen;
+  flex: 1;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view_node2 {}
+
+.fake {}
