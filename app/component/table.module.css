@@ -1,17 +1,12 @@
 /* table.module.css */
-.tableBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 800;
-}
+
 
 .tableContainer {
+  display: flex;
   overflow-x: auto;
   overflow-y: auto;
-  max-height: 500px;
-  width: 100%;
-  display: flex;
+  max-height: 40rem;
+
   justify-content: center;
 }
 
@@ -23,7 +18,7 @@
 
 .tableBox table th,
 .tableBox table td {
-  padding: 0.5rem;
+  padding: 0.3rem;
   border: 1px solid #555555;
   white-space: nowrap;
   overflow: hidden;
@@ -85,6 +80,7 @@
     top: 0;
     padding: 0.2rem;
     background-color: #E5D283;
+    border-left: 8rem solid #E5D283;
     width: max-content;
   }
 }
