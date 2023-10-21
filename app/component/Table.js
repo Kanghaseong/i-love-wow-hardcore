@@ -1,4 +1,5 @@
 "use client";
+// React Component
 import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./table.module.css";
@@ -12,7 +13,6 @@ export default function TableComponent() {
       .get(`${env_config()}/users`)
       .then((response) => {
         const sortedData = response.data.users.sort((a, b) => b.level - a.level);
-        console.log(sortedData);
         setData(sortedData);
       })
       .catch((error) => {
