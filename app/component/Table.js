@@ -13,6 +13,7 @@ export default function TableComponent() {
       .get(`${env_config()}/users`)
       .then((response) => {
         const sortedData = response.data.users.sort((a, b) => b.level - a.level);
+        console.log(sortedData);
         setData(sortedData);
       })
       .catch((error) => {
@@ -39,7 +40,7 @@ export default function TableComponent() {
           </thead>
           <tbody>
             {data.map((row, index) => (
-              <tr key={index} className={row.is_fully_dead ? styles.dead : styles.undead}>
+              <tr key={index} className={row.is_ghost ? styles.dead : styles.undead}>
                 <td data-label="레벨">{row.level}</td>
                 <td data-label="이름">{row.name}</td>
                 <td data-label="클래스">{row.user_class}</td>
