@@ -42,7 +42,7 @@ export default function TableComponent() {
               <tr key={index} className={row.is_fully_dead ? styles.dead : styles.undead}>
                 <td data-label="레벨">{row.level}</td>
                 <td data-label="이름">{row.name}</td>
-                <td data-label="클래스">{row.character_class}</td>
+                <td data-label="클래스">{row.user_class}</td>
                 <td data-label="종족">{row.race}</td>
                 <td data-label="성별">{row.gender}</td>
                 <td data-label="진영">{row.faction}</td>
