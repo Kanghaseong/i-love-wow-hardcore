@@ -8,7 +8,7 @@ export default function Page() {
     <div className={styles.dash}>
       <img src="/logo.png" alt="logo" />
       <h3>*사망한 유저는 빨간색으로 표시됩니다.</h3>
-      <h3>*블리자드 측의 마지막 접속 갱신기준을 파악하지 못하고 있습니다.(블리자드 api 사용으로 인해)</h3>
+      <h3>*데이터는 사용자 캐릭터가 접속 종료할 때 갱신됩니다.</h3>
       <Table></Table>
 
       <div className={styles.foot}>
