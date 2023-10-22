@@ -11,6 +11,10 @@
 
 }
 
+.red_text {
+  color: rgb(182, 0, 0);
+}
+
 /* .title {
   font-weight: 2000;
 } */
