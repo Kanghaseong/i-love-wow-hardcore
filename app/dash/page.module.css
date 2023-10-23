@@ -15,6 +15,7 @@
   color: rgb(182, 0, 0);
 }
 
-/* .title {
-  font-weight: 2000;
-} */
+.titles h3:hover,
+.titles h5:hover {
+  text-decoration: underline;
+}

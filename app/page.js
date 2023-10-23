@@ -9,7 +9,10 @@ export default function Home() {
         <h3>월드 오브 워크래프트 클래식 하드코어는 왜 재밌을까?</h3>
         <h5>ワールド·オブ·ワーク·ラフトクラシックハードコアはなぜ面白いのですか？</h5>
       </div>
-      <Link href="dash">시작하기</Link>
+
+      <Link href="dash" className={styles.start}>
+        시작하기
+      </Link>
     </div>
   );
 }
