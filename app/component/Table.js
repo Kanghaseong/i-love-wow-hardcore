@@ -48,7 +48,14 @@ export default function TableComponent() {
                 <td data-label="진영">{row.faction}</td>
                 <td data-label="렐름">{row.realm}</td>
                 <td data-label="길드">{row.guild}</td>
-                <td data-label="마지막 접속">{new Date(row.last_login_timestamp).toLocaleString()}</td>
+                <td data-label="마지막 접속">
+                  {new Date(row.last_login_timestamp).toLocaleString("ko-KR", {
+                    month: "long",
+                    day: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  })}
+                </td>
               </tr>
             ))}
           </tbody>
