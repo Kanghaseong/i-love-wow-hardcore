@@ -19,22 +19,22 @@
 .tableBox table th,
 .tableBox table td {
   padding: 0.3rem;
-  border: 1px solid #555555;
+  border: 1px solid #5f5f5f;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .tableBox table th {
-  background-color: #E5D283;
+  background-color: #b4c5d7;
 }
 
 .tableBox table tr:nth-child(even) {
-  background-color: rgb(174, 195, 174);
+  background-color: rgb(202, 186, 143);
 }
 
 .tableBox table tr:nth-child(odd) {
-  background-color: rgb(228, 228, 208);
+  background-color: #818F9E;
 }
 
 .dead {
