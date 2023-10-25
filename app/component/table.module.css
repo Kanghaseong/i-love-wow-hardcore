@@ -1,12 +1,11 @@
 /* table.module.css */
 
 
-.tableContainer {
+.tableBox {
   display: flex;
   overflow-x: auto;
   overflow-y: auto;
   max-height: 40rem;
-
   justify-content: center;
 }
 
@@ -44,14 +43,13 @@
 @media (max-width: 768px) {
   .tableBox {
     font-size: x-small;
+    justify-content: center;
+
   }
 
-  .tableContainer {
-    justify-content: center;
-  }
 
   .tableBox table {
-    width: auto;
+    width: fit-content;
   }
 
   .tableBox table th,
