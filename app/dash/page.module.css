@@ -5,11 +5,6 @@
   background-color: #4F709C;
 }
 
-.foot {
-  display: flex;
-  flex-direction: column;
-}
-
 .red_text {
   color: rgb(182, 0, 0);
 }
@@ -17,4 +12,5 @@
 .titles h3:hover,
 .titles h5:hover {
   text-decoration: underline;
+
 }
