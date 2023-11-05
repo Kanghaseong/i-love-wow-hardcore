@@ -6,19 +6,12 @@
   margin: 5rem 5rem;
 }
 
-.titles h1:hover,
-.titles h3:hover,
-.titles h5:hover {
-  color: rgb(236, 133, 15);
-}
-
-
 .start {
   display: inline-flex;
   text-align: center;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   border-radius: 15%;
   padding: 0.3rem;
   font-size: 1.2rem;
@@ -26,5 +19,5 @@
 }
 
 .start:hover {
-  background-color: rgb(236, 133, 15);
+  background-color: rgb(54, 54, 54);
 }
