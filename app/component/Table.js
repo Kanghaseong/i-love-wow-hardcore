@@ -1,6 +1,5 @@
 "use client";
-// React Component
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./table.module.css";
 import env_config from "@/env_config";
@@ -25,6 +24,7 @@ export default function TableComponent() {
       <table border="1" className={styles.table}>
         <thead>
           <tr>
+            <th>순번</th> {/* 순번 열 추가 */}
             <th>레벨</th>
             <th>이름</th>
             <th>클래스</th>
@@ -34,11 +34,13 @@ export default function TableComponent() {
             <th>렐름</th>
             <th>길드</th>
             <th>마지막 접속</th>
+            <th>삭제여부</th> {/* 캐릭터 삭제여부 열 추가 */}
           </tr>
         </thead>
         <tbody>
           {data.map((row, index) => (
             <tr key={index} className={row.is_ghost ? styles.dead : styles.undead}>
+              <td data-label="순번">{index + 1}</td> {/* 순번 적용 */}
               <td data-label="레벨">{row.level}</td>
               <td data-label="이름">{row.name}</td>
               <td data-label="클래스">{row.user_class}</td>
@@ -53,6 +55,7 @@ export default function TableComponent() {
                   day: "numeric",
                 })}
               </td>
+              <td data-label="삭제여부">{row.is_deleted ? "O" : "X"}</td> {/* 캐릭터 삭제여부 적용 */}
             </tr>
           ))}
         </tbody>

@@ -1,10 +1,12 @@
 import styles from "./page.module.css";
 import Table from "../component/Table";
 import Logo from "../component/Logo";
+import Nav from "../component/Nav";
 
 export default function Page() {
   return (
     <div className={styles.dash}>
+      {/* <Nav /> */}
       <Logo />
       <div className={styles.titles}>
         <h3>*캐릭터 정보 갱신은 배틀넷 로그아웃시 적용됩니다.</h3>
