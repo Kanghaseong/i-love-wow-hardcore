@@ -16,8 +16,8 @@ export default function User_card({ user, index }) {
           <Image src={imagePath} alt={user.user_class} width={26} height={26} />
         </div>
         <div className={styles.nose}>
-          <div>41</div>
-          <div>{user.name}</div>
+          <div>{user.level}</div>
+          <div className={user.is_ghost ? styles.dead : styles.undead}>{user.name}</div>
         </div>
       </section>
       <section>
