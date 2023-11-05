@@ -1,13 +1,13 @@
 import styles from "./page.module.css";
-import Table from "../component/Table";
-import Logo from "../component/Logo";
-import Nav from "../component/Nav";
+import Refresh from "../component/Refresh";
+import Link from "next/link";
+import Main_section from "../component/Main_section";
 
 export default function Page() {
   return (
     <div className={styles.dash}>
       <section className={styles.section1}>
-        <div className={styles.none}>none</div>
+        <div className={styles.none}></div>
         <nav className={styles.nav_head}>
           <h1>
             <span>WXW</span>
@@ -15,15 +15,27 @@ export default function Page() {
           <li>
             <span class="material-symbols-outlined">sort</span>Dashboard
           </li>
-          <li>
-            <span class="material-symbols-outlined">refresh</span>Refresh
-          </li>
+          <Refresh />
+          {/* <li>
+            <Link
+              href={`https://oauth.battle.net/authorize?region=kr&response_type=code&client_id=${process.env.NEXT_PUBLIC_BATTLE_NET_CLIENT_ID}&redirect_uri=http://localhost:4000/auth/redirect&scope=wow.profile openid&state=test`}
+            >
+              <span class="material-symbols-outlined">login</span>Login
+            </Link>
+          </li> */}
         </nav>
       </section>
-      <section className={styles.section2}>섹션 2</section>
+      <section className={styles.section2}>
+        <div className={styles.neck}>
+          <span>No.</span>
+          <span>Info</span>
+          <span>Guild</span>
+        </div>
+        <Main_section></Main_section>
+      </section>
       <section className={styles.section3}>
-        <div>디브</div>
-        <div className={styles.none}>none</div>
+        <div> </div>
+        <div className={styles.none}></div>
       </section>
       {/* <Nav /> */}
       {/* <Table></Table> */}

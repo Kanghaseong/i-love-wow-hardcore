@@ -7,5 +7,9 @@ export default function ReloadButton() {
     location.reload();
   };
 
-  return <img className={styles.logo} onClick={reloadPage} src="/logo.png" alt="logo" />;
+  return (
+    <h1 className={styles.logo}>
+      <span onClick={reloadPage}>WXW</span>
+    </h1>
+  );
 }
