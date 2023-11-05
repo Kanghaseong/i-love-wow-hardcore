@@ -4,8 +4,8 @@ import { Victor_Mono } from "next/font/google";
 const inter = Victor_Mono({ subsets: ["vietnamese"], weight: "400" });
 
 export const metadata = {
-  title: "I love world of warcraft classic hardcore.",
-  description: "월드 오브 워크래프트 클래식 하드코어는 세계 최고의 게임이다.",
+  title: "WXW.",
+  description: "can you alive?",
 };
 
 export default function RootLayout({ children }) {
