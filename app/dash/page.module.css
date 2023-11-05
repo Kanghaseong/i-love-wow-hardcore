@@ -44,10 +44,12 @@
   justify-content: center;
 }
 
-.nav_head>* {
+.nav_head h1,
+.nav_head li {
   display: flex;
   align-items: center;
   height: 4rem;
+  cursor: pointer;
 }
 
 .nav_head li {
@@ -56,20 +58,19 @@
   width: 65%;
 }
 
+.neck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+}
+
 .nav_head li:hover {
   background-color: rgb(15, 15, 15);
   filter: brightness(1.2);
   cursor: pointer;
   transition: filter 0.3s, border-radius 0.3s;
   border-radius: 10px;
-}
-
-
-.neck {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 2rem;
 }
 
 .neck>span:nth-child(1) {
