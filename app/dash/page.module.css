@@ -80,3 +80,26 @@
 .neck>span:nth-child(3) {
   margin: 0 3.8rem 0 0;
 }
+
+
+@media (max-width: 768px) {
+
+  .dash .section1,
+  .dash .section3 {
+    display: none;
+  }
+
+  .dash .section2 {
+
+    display: block;
+  }
+
+  .dash .nav_head h1 {
+
+    display: block;
+  }
+
+  .neck>span:nth-child(3) {
+    margin: 0 2rem 0 0;
+  }
+}
