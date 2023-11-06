@@ -100,7 +100,7 @@
 
 @media (max-width: 768px) {
 
-  .dash .section1,
+  .header,
   .dash .section3 {
     display: none;
   }
