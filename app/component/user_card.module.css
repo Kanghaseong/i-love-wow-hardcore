@@ -18,22 +18,6 @@
   flex: 0.3;
 }
 
-
-.face>div>span {
-  margin: 0 0 0.5rem 0;
-}
-
-
-.nose>div:nth-child(1) {
-  color: aquamarine;
-}
-
-.nose>div:nth-child(2) {
-  padding: 0 0 0.2rem 0;
-}
-
-
-
 .user_card>section:nth-child(3) {
   align-items: first baseline;
   flex: 0.8;
@@ -47,10 +31,17 @@
   justify-content: space-evenly;
 }
 
+.face {
+  border-radius: 50%;
+}
+
+.nose>div:nth-child(1) {
+  color: aquamarine;
+}
+
 .info {
   font-size: 0.8rem;
 }
-
 
 .dead {
   color: red;

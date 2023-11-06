@@ -10,10 +10,10 @@ export default function User_card({ user, index }) {
       <section className={styles.rank}>
         <div>{index + 1}</div>
       </section>
-      <section className={styles.face}>
+      <section>
         <div>
           {/* Display the class-specific image */}
-          <Image src={imagePath} alt={user.user_class} width={30} height={30} />
+          <Image className={styles.face} src={imagePath} alt={user.user_class} width={30} height={30} />
         </div>
         <div className={styles.nose}>
           <div>{user.level}</div>
@@ -22,7 +22,6 @@ export default function User_card({ user, index }) {
       </section>
       <section className={styles.info}>
         <div>
-          <span>성별:</span>
           <span>
             {user.gender == "남성" ? (
               <span class="material-symbols-outlined">male</span>
@@ -32,7 +31,6 @@ export default function User_card({ user, index }) {
           </span>
         </div>
         <div>
-          <span>종족: </span>
           <span>{user.race}</span>
         </div>
 

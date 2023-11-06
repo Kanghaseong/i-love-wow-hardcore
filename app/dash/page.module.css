@@ -71,13 +71,6 @@
   width: 65%;
 }
 
-.neck {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 2rem;
-}
-
 .nav_head li:hover {
   background-color: rgb(15, 15, 15);
   filter: brightness(1.2);
@@ -89,6 +82,13 @@
 /* .mouth {
   display: flex;
 } */
+
+.neck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+}
 
 .neck>span:nth-child(1) {
   margin: 0 0 0 1rem;

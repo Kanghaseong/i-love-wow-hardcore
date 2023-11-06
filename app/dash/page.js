@@ -34,11 +34,7 @@ export default function Page() {
       <main className={styles.main}>
         <section className={styles.section2}>
           {/* <div className={styles.mouth}>Dashboard</div> */}
-          <div className={styles.neck}>
-            <span>No.</span>
-            <span>Info</span>
-            <span>Guild</span>
-          </div>
+
           <Main_section></Main_section>
         </section>
         <section className={styles.section3}>
