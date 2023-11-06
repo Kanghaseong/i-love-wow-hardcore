@@ -24,6 +24,10 @@
 }
 
 
+.nose>div:nth-child(1) {
+  color: aquamarine;
+}
+
 .nose>div:nth-child(2) {
   padding: 0 0 0.2rem 0;
 }
@@ -41,6 +45,10 @@
   flex-direction: column;
   flex: 0.8;
   justify-content: space-evenly;
+}
+
+.info {
+  font-size: 0.8rem;
 }
 
 

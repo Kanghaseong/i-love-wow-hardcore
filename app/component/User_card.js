@@ -13,14 +13,14 @@ export default function User_card({ user, index }) {
       <section className={styles.face}>
         <div>
           {/* Display the class-specific image */}
-          <Image src={imagePath} alt={user.user_class} width={26} height={26} />
+          <Image src={imagePath} alt={user.user_class} width={30} height={30} />
         </div>
         <div className={styles.nose}>
           <div>{user.level}</div>
           <div className={user.is_ghost ? styles.dead : styles.undead}>{user.name}</div>
         </div>
       </section>
-      <section>
+      <section className={styles.info}>
         <div>
           <span>성별:</span>
           <span>
@@ -34,6 +34,15 @@ export default function User_card({ user, index }) {
         <div>
           <span>종족: </span>
           <span>{user.race}</span>
+        </div>
+
+        <div>
+          <span>
+            {new Date(user.last_login_timestamp).toLocaleString("ko-KR", {
+              month: "long",
+              day: "numeric",
+            })}
+          </span>
         </div>
       </section>
       <section>
