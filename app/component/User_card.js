@@ -46,7 +46,7 @@ export default function User_card({ user, index }) {
         </div>
       </section>
       <section>
-        <span>왁타버스</span>
+        <span>{user.guild}</span>
       </section>
     </div>
   );
